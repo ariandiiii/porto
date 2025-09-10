@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../style/gaya.css" />
+    <title>Porto</title>
+  </head>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const fadeElements = document.querySelectorAll(".fade-in");
+      fadeElements.forEach((el) => {
+        el.classList.add("visible");
+      });
+    });
+
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+
+    function printResume() {
+      // ganti "resume.pdf" dengan nama file resume lu
+      var win = window.open("../file/cv.pdf", "_blank");
+      win.onload = function () {
+        win.print();
+      };
+    }
+  </script>
+
+  <body class="flex flex-col min-h-screen">
+    <main class="flex-grow">
+      <nav class="navi">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-wrap fade-in">
+          <div class="flex items-center justify-between h-16 flex-wrap mx-auto">
+            <a href="../html/index.html">
+              <div class="namee flex items-center gap-3">
+                <img
+                  class="w-[40px] h-[40px] rounded-full object-cover"
+                  src="../image/logo.jpg"
+                  alt=""
+                />
+                <span class="text-xl font-bold gradient-text">ARIANDI</span>
+              </div>
+            </a>
+
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <a class="linkk" href="index.html">Home</a>
+                <a class="linkk" href="profile.html">Profile</a>
+                <a class="linkk" href="project.html">Projects</a>
+              </div>
+            </div>
+
+            <button class="md:hidden">
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <section id="home">
+        <div
+          class="opening flex flex-col-reverse lg:flex-row items-center justify-between px-6 lg:px-16 gap-10 lg:gap-20 mt-10"
+        >
+          <div
+            class="pendahuluan space-y-1 max-w-xl text-center lg:text-left fade-in"
+          >
+            <h2 class="typewriter">Hi, i'm <span>Ariandi Saputra</span></h2>
+            <p class="pendahuluan2">
+              UI/UX Designer Who Builds Clean And Functional Interfaces
+            </p>
+            <p class="pendahuluan3">
+              I’m from Indonesia, a UI/UX Designer with over 2 years of
+              experience in designing web and mobile interfaces using Figma.
+              I’ve worked on various projects, including school assignments and
+              personal design work, with a strong focus on clean, functional,
+              and user-friendly interfaces.
+            </p>
+            <div class="flex justify-center lg:justify-start gap-6 mt-4">
+              <a href="mailto:saputraariandi4@gmail.com" class="ophub"
+                >Email Me</a
+              >
+            </div>
+            <div>
+              <button
+                onclick="printResume()"
+                class="text-[#e0fbfc] hover:cursor-pointer"
+              >
+                Download Resume >
+              </button>
+            </div>
+          </div>
+
+          <div class="poto -mt-14 fade-in">
+            <img
+              src="../image/pro.png"
+              alt="Foto Uta"
+              class="w-[350px] h-auto prof"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="space-y-4 flex-wrap mx-auto bg-[#38455e] p-10 rounded-lg">
+          <div>
+            <p class="text-center mx-auto text-[#fff380] text-[25px] font-bold">
+              About Me
+            </p>
+            <hr class="text-[#fff380] w-25 mb-3 rounded-[6px] border-t-4 mx-auto item-center">
+            <div class="flex justify-center text-[#e0fbfc] gap-5 mb-3">
+              <div class="gap-2 flex items-center">
+                <img src="../image/point.png" alt="" class="w-4 h-auto">
+                <p>indonesia</p>
+              </div>
+              <div class="gap-2 flex items-center">
+                <img src="../image/calendar.png" alt="" class="w-4 h-auto">
+                <p>2+ years experience</p>
+              </div>
+              <div class="gap-2 flex items-center">
+                <img src="../image/target.png" alt="" class="w-4 h-auto">
+                <p>UI/UX focus</p>
+              </div>
+            </div>
+            <p class="text-center text-[#e0fbfc]">
+              I’m from Indonesia and currently focusing on UI/UX design while
+              studying at a vocational high school. I’ve been learning and
+              working on mobile and web interface projects since 2023 using
+              tools like Figma. I’ve designed various user interfaces for
+              personal projects, school assignments,with an emphasis on
+              simplicity, clarity, and user experience. I’m passionate about
+              turning ideas into smooth and functional interfaces. Right now,
+              I’m looking for more real-world experiences and collaborations to
+              sharpen my skills and grow as a designer.
+            </p>
+          </div>
+          <hr class="text-[#e0fbfc]" />
+          <div
+            class="flex justify-center gap-10 flex-wrap mx-auto text-[#e0fbfc]"
+          >
+            <div class="flex flex-col flex-1 gap-5 ">
+              <p class="font-bold text-[25px] text-[#fff380] text-center">
+                Services
+              </p>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img src="../image/pallete.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">UI/UX Design</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform">
+                <img src="../image/code.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Web Development</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px] hover:scale-105 duration-300 transition-transform">
+                <img src="../image/dimensions.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Prototyping</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img src="../image/wireframe.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Wireframing</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col flex-1 gap-5">
+              <p class="font-bold text-[25px] text-[#fff380] text-center">
+                Tools
+              </p>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img src="../image/figma (1).png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Figma</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img src="../image/files.png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">HTML</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img src="../image/bootstrap (1).png" alt="" class="w-7" />
+                <p class="text-[18px] text-[#e0fbfc]">Bootstrap</p>
+              </div>
+              <div class="flex gap-3 bg-[rgba(41,50,65,0.7)] p-3 rounded-[6px]  hover:scale-105 duration-300 transition-transform">
+                <img
+                  src="../image/css-file-format-symbol.png"
+                  alt=""
+                  class="w-7"
+                />
+                <p class="text-[18px] text-[#e0fbfc]">Tailwindcss</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- #FFA300-->
+      <section id="projects">
+        <div>
+          <p class="font-bold text-[25px] text-[#fff380] text-center">
+            My Project
+          </p>
+
+          <div class="flex gap-20 justify-center mt-5 mx-auto flex-wrap">
+            <div
+              class="card border  rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
+              style="width: 20rem"
+            >
+              <img
+                src="../image/1.png"
+                class="card-img-top object-cover h-[180px] object-contain w-full rounded-t"
+                alt="..."
+              />
+
+              <div class="card-body p-3 flex-grow rounded-lg bg-[#38455e]">
+                <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
+                  Online shop
+                </h5>
+                <p class="card-text text-[#e0fbfc]">
+                  A modern e-commerce UI with intuitive product browsing,
+                  wishlist, and cart features. Designed to simplify shopping
+                  while keeping it stylish and fast.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card border rounded-lg flex flex-col w-80 hover:scale-105 duration-300 transition-transform"
+            >
+              <img
+                src="../image/2.png"
+                class="card-img-top object-cover h-auto w-full rounded-t"
+                alt="..."
+              />
+              <div class="card-body p-3 rounded-lg bg-[#38455e]">
+                <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
+                  Buy page
+                </h5>
+                <p class="card-text text-[#e0fbfc]">
+                  Detailed product page layout that highlights user reviews,
+                  pricing, and purchase options. Clean hierarchy and clear CTAs
+                  improve user trust and conversion.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card border  rounded-lg flex flex-col w-80 hover:scale-105 duration-300 transition-transform"
+            >
+              <img
+                src="../image/Desktop - 1.png"
+                class="card-img-top object-cover h-auto w-full rounded-t"
+                alt="..."
+              />
+              <div class="card-body p-3 rounded-lg flex-grow bg-[#38455e]">
+                <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
+                  DEPOKinside
+                </h5>
+                <p class="card-text text-[#e0fbfc]">
+               UI/UX design of Depok City website for competition, focused on information, accessibility, and aesthetics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mx-auto flex-wrap">
+          <p
+            class="text-center justify-center mb-5 text-[#fff380] text-[25px] font-bold"
+          >
+            Why Hire Me?
+          </p>
+          <div
+            class="flex max-w-4xl gap-15 justify-center mx-auto text-center flex-wrap text-[#e0fbfc]"
+          >
+            <div
+              class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+            >
+              <p class="text-[#fff380] font-bold text-[20px]">Fast Work</p>
+              <p class="w-50 text-[#e0fbfc]">
+                I deliver projects on time without compromising quality and
+                attention to detail.
+              </p>
+            </div>
+            <div
+              class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+            >
+              <p class="text-[#fff380] font-bold text-[20px]">
+                Attractive Design
+              </p>
+              <p class="w-50 text-[#e0fbfc]">
+                I create clean, modern, and user-friendly designs tailored to
+                your needs.
+              </p>
+            </div>
+            <div
+              class="border space-y-2 p-5 rounded-full px-7 border-[#6781b2]"
+            >
+              <p class="text-[#fff380] font-bold text-[20px]">
+                Easy To Contact
+              </p>
+              <p class="w-50 text-[#e0fbfc]">
+                I’m responsive, easy to reach, and always open to feedback and
+                collaboration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="contact" class="p-[7vh] bg-[#1e242e]">
+      <div class="ml-[17px]">
+        <p class="text-[#e0fbfc] text-[20px] font-bold">Get In Touch</p>
+        <p class="text-[#e0fbfc] text-[18px]">
+          For busines inquiry please send email to
+          <a
+            href="mailto:saputraariandi4@gmail.com"
+            class="text-[#fff380] italic"
+            >saputraariandi4@gmail.com</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
