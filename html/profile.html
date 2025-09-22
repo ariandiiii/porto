@@ -26,177 +26,272 @@
 
   <body class="flex flex-col min-h-screen">
     <main class="flex-grow">
-    <nav class="navi">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-wrap">
-        <div class="flex items-center justify-between h-16 flex-wrap mx-auto">
-          <a href="../index.html">
-          <div class="namee flex items-center gap-3">
-            <img
-              class="w-[40px] h-[40px] rounded-full object-cover"
-              src="../image/logo.jpg"
-              alt=""
-            />
-            <span class="text-xl font-bold gradient-text">ARIANDI</span>
-          </div>
-          </a>
-
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a class="linkk" href="../index.html">Home</a>
-              <a class="linkk" href="profile.html">Profile</a>
-              <a class="linkk" href="project.html">Projects</a>
-            </div>
-          </div>
-          <button class="md:hidden">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <section class="max-w-9xl max-auto">
-      <div class="flex gap-3">
-        <!-- bagian kiri -->
-        <div class="flex flex-col w-1/3 gap-3">
+      <nav class="navi">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center"
+        >
           <div
-            class="bg-[#38455e] p-6 rounded-lg flex flex-col items-center text-center"
+            class="flex justify-center items-center justify-between h-16 flex-wrap w-full"
           >
-            <img
-              src="../image/pff.jpg"
-              alt=""
-              class="rounded-full w-35 h-35 object-cover"
-            />
-            <p class="text-3xl font-semibold text-[#fff380]">Ariandi Saputra</p>
-            <p class="text-lg text-[#e0fbfc]">UI/UX Design</p>
-          </div>
+            <a href="../index.html">
+              <div class="namee flex items-center gap-1">
+                <img
+                  class="w-[30px] h-[30px] rounded-full object-cover md:w-[40px] md:h-[40px]"
+                  src="../image/logo.jpg"
+                  alt=""
+                />
+                <span
+                  class="font-bold gradient-text text-[#e0fbfc] text-[15px] md:text-[20px]"
+                  >ARIANDI</span
+                >
+              </div>
+            </a>
 
-          <div class="bg-[#38455e] p-6 rounded-lg">
-            <p class="text-[23px] font-semibold text-[#fff380]">Education</p>
-            <p class="text-[18px] font-semibold text-[#e0fbfc]">SMKN 1 Depok</p>
-            <p class="text-[#e0fbfc]">2023 - 2026</p>
-            <p class="text-[#e0fbfc]">Pengembangan perangkat lunak dan gim</p>
-          </div>
-
-          <div class="bg-[#38455e] p-6 rounded-lg">
-            <p class="text-[23px] text-[#fff380] font-semibold">Expertise</p>
-            <p class="text-[18px] text-[#e0fbfc]">
-              Web design, Wireframe web design, wireframe mobile design, mobile
-              apps design with figma
-            </p>
+            <div
+              class="flex flex-wrap gap-2 justify-end flex-grow text-[15px] text-[#fff380] justify-center md:text-[20px] md:gap-5"
+            >
+              <a class="linkk whitespace-nowrap" href="../index.html">Home</a>
+              <a class="linkk whitespace-nowrap" href="../html/profile.html"
+                >Profile</a
+              >
+              <a class="linkk whitespace-nowrap" href="../html/project.html"
+                >Projects</a
+              >
+            </div>
           </div>
         </div>
+      </nav>
 
-        <!-- bagian kanan -->
-        <div class="flex flex-col w-2/3 gap-3 text-[#e0fbfc]">
-          <div class="bg-[#38455e] p-6 rounded-lg gap-3">
-            <div class="flex justify-between gap-3">
-              <div class="flex flex-col flex-1">
-                <p class="text-[23px] font-semibold text-[#fff380]">Profile</p>
-                <hr />
-                <p class="text-[18px] font-semibold">Name</p>
-                <p>Ariandi saputra</p>
-                <p class="text-[18px] font-semibold">Age</p>
-                <p>18</p>
+      <section class="max-auto mt-[10vh] m-[10px] md:m-[10vh]">
+        <div class="flex flex-col md:flex-row gap-3">
+          <!-- bagian kiri -->
+          <div class="flex flex-col gap-3 md:w-1/3">
+            <div class="flex flex-row md:flex-col gap-3">
+              <div
+                class="bg-[#38455e] p-6 rounded-lg flex flex-col flex-1 items-center text-center"
+              >
+                <img
+                  src="../image/pff.jpg"
+                  alt=""
+                  class="rounded-full w-20 h-20 object-cover md:w-35 md:h-35"
+                />
+                <p class="text-lg font-semibold text-[#fff380] md:text-3xl">
+                  Ariandi Saputra
+                </p>
+                <p class="text-lg text-[#e0fbfc]">UI/UX Design</p>
               </div>
 
-              <div class="flex flex-col flex-1">
-                <p class="text-[23px] text-[#fff380] font-semibold">Contact</p>
-                <hr />
-                <p class="text-[18px] font-semibold">Whatsapp</p>
-                <p>0858884634189</p>
-                <p></p>
-                <p class="text-[18px] font-semibold">Email</p>
-                <p>saputraariandi4@gmail.com</p>
-                <p class="text-[18px] font-semibold">Media social</p>
-                <div class="flex gap-2">
-                  <a href="https://x.com/ariandi_i" target="_blank" rel="noopener noreferrer"
-                    ><img class="w-8 h-8 hover:scale-118 transition-transform duration-300" src="../image/twitter 1.png" alt=""
-                  /></a>
-                  <a href="https://www.linkedin.com/in/ariandi-saputra-2a7095366/" target="_blank" rel="noopener noreferrer"
-                    ><img class="w-6 h-6 hover:scale-120 transition-transform duration-300" src="../image/linkedin 1.png" alt=""
-                  /></a>
-                  <a href="https://www.instagram.com/arndisptra/" target="_blank" rel="noopener noreferrer"
-                    ><img  class="w-6 h-6 hover:scale-120 transition-transform duration-300" src="../image/instagram 1.png" alt=""
-                  /></a>
-                  <a href="https://www.fiverr.com/s/jjZQ0oa" target="_blank" rel="noopener noreferrer">
-                    <img src="../image/fiverr.png" alt="" class="w-5 h-5 hover:scale-120 transition-transform duration-300" >
-                  </a>
-                </div>
+              <div class="bg-[#38455e] p-6 rounded-lg flex-1">
+                <p
+                  class="text-[20px] md:text-[23px] font-semibold text-[#fff380]"
+                >
+                  Education
+                </p>
+                <p
+                  class="text-[15px] md:text-[18px] font-semibold text-[#e0fbfc]"
+                >
+                  SMKN 1 Depok
+                </p>
+                <p class="text-[#e0fbfc] text-[13px] md:text-[15px]">
+                  2023 - 2026
+                </p>
+                <p class="text-[#e0fbfc] text-[13px] md:text-[15px]">
+                  Pengembangan perangkat lunak dan gim
+                </p>
               </div>
             </div>
 
-            <div>
-              <p class="text-[23px] text-[#fff380] font-semibold">About me</p>
-              <hr />
-              <p class="text-[12px]">
-                I’m from Indonesia and currently focusing on UI/UX design while
-                studying at a vocational high school. I’ve been learning and
-                working on mobile and web interface projects since 2023 using
-                tools like Figma. I’ve designed various user interfaces for
-                personal projects, school assignments,with an emphasis on
-                simplicity, clarity, and user experience. I’m passionate about
-                turning ideas intosmooth and functional interfaces. Right now,
-                I’m looking for more real-world experiences and collaborations
-                to sharpen my skills and grow as a designer.
+            <div class="bg-[#38455e] p-6 rounded-lg">
+              <p
+                class="text-[20px] md:text-[23px] text-[#fff380] font-semibold"
+              >
+                Expertise
+              </p>
+              <p class="text-[15px] md:text-[18px] text-[#e0fbfc]">
+                Web design, Wireframe web design, wireframe mobile design,
+                mobile apps design with figma
               </p>
             </div>
           </div>
 
-          <div class="flex gap-3">
-            <div
-              class="flex flex-col gap-11 bg-[#38455e] p-6 flex-1 rounded-lg"
-            >
-              <p class="text-[23px] font-semibold text-[#fff380]">Hard skill</p>
-              <div class="flex gap-5 justify-center">
-                <img class="w-12 h-12 " src="../image/html 1.png" alt="" />
-                <img class="w-12 h-12" src="../image/css.png" alt="" />
-                <img class="h-13 w-13" src="../image/tail.png" alt="" />
-                <img class="w-12 h-12" src="../image/figma.png" alt="" />
-                <img class="w-12 h-12" src="../image/bootstrap 1.png" alt="" />
+          <!-- bagian kanan -->
+          <div class="flex flex-col md:w-2/3 gap-3 text-[#e0fbfc]">
+            <div class="bg-[#38455e] p-6 rounded-lg gap-3">
+              <div class="flex justify-between gap-3">
+                <div class="flex flex-col flex-1">
+                  <p
+                    class="text-[20px] md:text-[23px] font-semibold text-[#fff380]"
+                  >
+                    Profile
+                  </p>
+                  <hr />
+                  <p class="text-[15px] md:text-[18px] font-semibold">Name</p>
+                  <p class="text-[13px] md:text-[15px]">Ariandi saputra</p>
+                  <p class="text-[15px] md:text-[18px] font-semibold">Age</p>
+                  <p class="text-[13px] md:text-[15px]">18</p>
+                </div>
+
+                <div class="flex flex-col flex-1">
+                  <p
+                    class="text-[20px] md:text-[23px] text-[#fff380] font-semibold"
+                  >
+                    Contact
+                  </p>
+                  <hr />
+                  <p class="text-[15px] md:text-[18px] font-semibold">
+                    Whatsapp
+                  </p>
+                  <p class="text-[13px] md:text-[15px]">0858884634189</p>
+                  <p></p>
+                  <p class="text-[15px] md:text-[18px] font-semibold">Email</p>
+                  <p class="text-[13px] md:text-[15px]">
+                    saputraariandi4@gmail.com
+                  </p>
+                  <p class="text-[15px] md:text-[18px] font-semibold">
+                    Media social
+                  </p>
+                  <div class="flex gap-2">
+                    <a
+                      href="https://x.com/ariandi_i"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="w-7 h-7 hover:scale-118 transition-transform duration-300"
+                        src="../image/twitter 1.png"
+                        alt=""
+                    /></a>
+                    <a
+                      href="https://www.linkedin.com/in/ariandi-saputra-2a7095366/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="w-5 h-5 hover:scale-120 transition-transform duration-300"
+                        src="../image/linkedin 1.png"
+                        alt=""
+                    /></a>
+                    <a
+                      href="https://www.instagram.com/arndisptra/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        class="w-5 h-5 hover:scale-120 transition-transform duration-300"
+                        src="../image/instagram 1.png"
+                        alt=""
+                    /></a>
+                    <a
+                      href="https://www.fiverr.com/s/jjZQ0oa"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <img
+                        src="../image/fiverr.png"
+                        alt=""
+                        class="w-4 h-4 hover:scale-120 transition-transform duration-300"
+                      />
+                    </a>
+                    <a href="https://www.threads.com/@arndisptra" target="_blank">
+                      <img src="../image/threads.png" alt="" class="w-5 h-5 hover:scale-120 transition-transform duration-300">
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <p
+                  class="text-[20px] md:text-[23px] text-[#fff380] font-semibold"
+                >
+                  About me
+                </p>
+                <hr />
+                <p class="text-[12px]">
+                  I’m from Indonesia and currently focusing on UI/UX design
+                  while studying at a vocational high school. I’ve been learning
+                  and working on mobile and web interface projects since 2023
+                  using tools like Figma. I’ve designed various user interfaces
+                  for personal projects, school assignments,with an emphasis on
+                  simplicity, clarity, and user experience. I’m passionate about
+                  turning ideas intosmooth and functional interfaces. Right now,
+                  I’m looking for more real-world experiences and collaborations
+                  to sharpen my skills and grow as a designer.
+                </p>
               </div>
             </div>
-            <div class="flex flex-col gap-5 bg-[#38455e] p-6 flex-1 rounded-lg">
-              <p class="text-[23px] font-semibold text-[#fff380]">Softskill</p>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="bg-[#fff380] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300 hover:rotate-6 transition-transform duration-300"
-                  >#Teamwork</span
+
+            <div class="flex gap-3">
+              <div
+                class="flex flex-col gap-13 bg-[#38455e] p-6 flex-1 rounded-lg md:gap-11"
+              >
+                <p
+                  class="text-[20px] md:text-[23px] font-semibold text-[#fff380]"
                 >
-                <span class="border p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300"
-                  >#Creativity</span
+                  Hard skill
+                </p>
+                <div class="flex flex-wrap gap-5 justify-center">
+                  <img
+                    class="w-7 h-7 md:w-12 md:h-12"
+                    src="../image/html 1.png"
+                    alt=""
+                  />
+                  <img
+                    class="w-7 h-7 md:w-12 md:h-12"
+                    src="../image/css.png"
+                    alt=""
+                  />
+                  <img
+                    class="w-7 h-7 md:w-12 md:h-12"
+                    src="../image/tail.png"
+                    alt=""
+                  />
+                  <img
+                    class="w-7 h-7 md:w-12 md:h-12"
+                    src="../image/figma.png"
+                    alt=""
+                  />
+                  <img
+                    class="w-7 h-7 md:w-12 md:h-12"
+                    src="../image/bootstrap 1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-3 bg-[#38455e] p-6 flex-1 rounded-lg"
+              >
+                <p
+                  class="text-[20px] md:text-[23px] font-semibold text-[#fff380]"
                 >
-                <span
-                  class="bg-[#fff380] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300"
-                  >#Time_management</span
-                >
-                <span class="border p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300"
-                  >#Comunication</span
-                >
-                <span
-                  class="bg-[#fff380] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300"
-                  >#Fast_work</span
-                >
+                  Softskill
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="bg-[#fff380] text-[13px] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300 hover:rotate-6 transition-transform duration-300 md:text-[15px]"
+                    >#Teamwork</span
+                  >
+                  <span
+                    class="border p-1 text-[13px] rounded-lg font-semibold hover:scale-110 transition-transform duration-300 md:text-[15px]"
+                    >#Creativity</span
+                  >
+                  <span
+                    class="bg-[#fff380] text-[13px] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300 md:text-[15px]"
+                    >#Time_management</span
+                  >
+                  <span
+                    class="border p-1 rounded-lg text-[13px] font-semibold hover:scale-110 transition-transform duration-300 md:text-[15px]"
+                    >#Comunication</span
+                  >
+                  <span
+                    class="bg-[#fff380] text-[13px] text-[#38455e] p-1 rounded-lg font-semibold hover:scale-110 transition-transform duration-300 md:text-[15px]"
+                    >#Fast_work</span
+                  >
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </main>
 
-    <div id="contact" class="p-[7vh] bg-[#1e242e]">
+    <div id="contact" class="p-[20px] bg-[#1e242e] md:p-[40px]">
       <div class="ml-[17px]">
         <p class="text-[#e0fbfc] text-[20px] font-bold">Get In Touch</p>
         <p class="text-[#e0fbfc] text-[18px]">

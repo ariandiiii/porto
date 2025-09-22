@@ -33,23 +33,14 @@ body {
   transition: background-color 0.3s;
 }
 
-.navi a {
-  color: #fff380;
-  font-size: 20px;
-}
-
-.namee span {
-  color: #e0fbfc;
-  font-size: 20px;
-}
 
 /* isi sec1 */
 
-section {
-  margin: 10vh;
-}
+/* section {
+  margin: 5vh;
+} */
 
-.opening {
+/* .opening {
   display: flex;
   position: relative;
   margin-top: 20vh;
@@ -57,24 +48,19 @@ section {
   display: flex;
   gap: 20vh;
   justify-content: center;
-}
-
+} */
+/* 
 .pendahuluan {
   max-width: 50%;
-}
+} */
 
-.pendahuluan h2 {
+/* .pendahuluan h2 {
   color: #fff380;
   font-size: 25px;
   font-weight: bold;
-}
+} */
 
-.pendahuluan2 {
-  /* color: #9bc1d9;s */
-  color: #e0fbfc;
-  font-size: 35px;
-  font-weight: bold;
-}
+
 
 .pendahuluan3 {
   /* color: #e0fbfc; */

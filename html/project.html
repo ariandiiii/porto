@@ -26,80 +26,78 @@
 
   <body class="flex flex-col min-h-screen">
     <main class="flex-grow">
-    <nav class="navi">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-wrap">
-        <div class="flex items-center justify-between h-16 flex-wrap mx-auto">
-          <a href="../index.html">
-          <div class="namee flex items-center gap-3">
-            <img
-              class="w-[40px] h-[40px] rounded-full object-cover"
-              src="../image/logo.jpg"
-              alt=""
-            />
-            <span class="text-xl font-bold gradient-text">ARIANDI</span>
-          </div>
-          </a>
+      <nav class="navi">
+        <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center"
+        >
+          <div
+            class="flex justify-center items-center justify-between h-16 flex-wrap w-full"
+          >
+            <a href="../index.html">
+              <div class="namee flex items-center gap-1">
+                <img
+                  class="w-[30px] h-[30px] rounded-full object-cover md:w-[40px] md:h-[40px]"
+                  src="../image/logo.jpg"
+                  alt=""
+                />
+                <span
+                  class="font-bold gradient-text text-[#e0fbfc] text-[15px] md:text-[20px]"
+                  >ARIANDI</span
+                >
+              </div>
+            </a>
 
-          <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <a class="linkk" href="../index.html">Home</a>
-              <a class="linkk" href="profile.html">Profile</a>
-              <a class="linkk" href="project.html">Projects</a>
+            <div
+              class="flex flex-wrap gap-2 justify-end flex-grow text-[15px] text-[#fff380] justify-center md:text-[20px] md:gap-5"
+            >
+              <a class="linkk whitespace-nowrap" href="../index.html">Home</a>
+              <a class="linkk whitespace-nowrap" href="../html/profile.html"
+                >Profile</a
+              >
+              <a class="linkk whitespace-nowrap" href="../html/project.html"
+                >Projects</a
+              >
             </div>
           </div>
-          <button class="md:hidden">
-            <svg
-              class="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+        </div>
+      </nav>
+
+      <section class="mt-[10vh] m-[10px] md:m-[10vh]">
+        <div
+          class="p-10 bg-gradient-to-r from-[#7e96c7] to-[#26427c] rounded-[5px]"
+        >
+          <p class="font-bold text-center text-[20px]  text-[#fff380] md:text-[25px]">
+            My project
+          </p>
+          <p class="text-center text-[13px] text-[#fff] md:text-[15px]">
+            Discover my latest work and creative endeavors
+          </p>
+        </div>
+        
+        <div
+          class="flex gap-4  justify-center pt-5 text-center text-[#fff380] md:gap-15 md:pt-10"
+        >
+          <div class="">
+            <a
+              href="../html/project.html"
+              class="text-[17px] underline underline-offset-5 md:text-2xl"
+              >All</a
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
+          </div>
+          <div>
+            <a href="../html/project2.html" class="text-[17px] md:text-2xl">Web design</a>
+          </div>
+          <div>
+            <a href="../html/project3.html" class="text-[17px] md:text-2xl">Mobile design</a>
+          </div>
         </div>
-      </div>
-    </nav>
+      </section>
 
-    <section class="">
-      <div
-        class="p-10 bg-gradient-to-r from-[#7e96c7] to-[#26427c] rounded-[5px]"
-      >
-        <p class="font-bold text-center text-[25px] text-[#fff380]">
-          My project
-        </p>
-        <p class="text-center text-[15px] text-[#fff]">
-          Discover my latest work and creative endeavors
-        </p>
-      </div>
-      <div
-        class="flex gap-15 justify-center pt-10 text-xl text-center text-[#fff380]"
-      >
-        <div class="">
-          <a
-            href="../html/project.html"
-            class="text-2xl underline underline-offset-5"
-            >All</a
-          >
-        </div>
-        <div>
-          <a href="../html/project2.html" class="text-2xl">Web design</a>
-        </div>
-        <div>
-          <a href="../html/project3.html" class="text-2xl">Mobile design</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="flex gap-20 justify-center mt-5 mx-auto flex-wrap">
+      <section id="projects">
+        <div class="flex gap-10 justify-center mt-5 mx-auto flex-wrap md:gap-20">
+          <a href="../html/deskripsi3.html">
             <div
-              class="card border  rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
+              class="card border rounded-lg flex flex-col hover:scale-105 duration-300 transition-transform"
               style="width: 20rem"
             >
               <img
@@ -108,7 +106,7 @@
                 alt="..."
               />
 
-              <div class="card-body p-3 flex-grow rounded-lg bg-[#38455e]">
+              <div class="card-body p-3 flex-grow rounded-b-lg bg-[#38455e]">
                 <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
                   Online shop
                 </h5>
@@ -119,47 +117,56 @@
                 </p>
               </div>
             </div>
+          </a>
+
+          <a href="../html/deskripsi2.html">
             <div
               class="card border rounded-lg flex flex-col w-80 hover:scale-105 duration-300 transition-transform"
             >
               <img
-                src="../image/2.png"
+                src="../image/kampungku.png"
                 class="card-img-top object-cover h-auto w-full rounded-t"
                 alt="..."
               />
-              <div class="card-body p-3 rounded-lg bg-[#38455e]">
+              <div class="card-body p-3 rounded-b-lg bg-[#38455e] h-[154px]">
                 <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
-                  Buy page
+                  KampungKu
                 </h5>
                 <p class="card-text text-[#e0fbfc]">
-                  Detailed product page layout that highlights user reviews,
-                  pricing, and purchase options. Clean hierarchy and clear CTAs
-                  improve user trust and conversion.
+                  Smart mobile app for village communication and information.
+                  Stay connected, informed, and engaged.
                 </p>
               </div>
             </div>
+          </a>
+
+          <a href="../html/deskripsi1.html">
             <div
-              class="card border  rounded-lg flex flex-col w-80 hover:scale-105 duration-300 transition-transform"
+              class="card border rounded-lg flex flex-col w-80 hover:scale-105 duration-300 transition-transform"
             >
               <img
                 src="../image/Desktop - 1.png"
                 class="card-img-top object-cover h-auto w-full rounded-t"
                 alt="..."
               />
-              <div class="card-body p-3 rounded-lg flex-grow bg-[#38455e]">
+              <div
+                class="card-body p-3 rounded-b-lg flex-grow bg-[#38455e] h-[154px]"
+              >
                 <h5 class="card-title text-[#e0fbfc] text-[22px] font-bold">
                   DEPOKinside
                 </h5>
                 <p class="card-text text-[#e0fbfc]">
-               UI/UX design of Depok City website for competition, focused on information, accessibility, and aesthetics.
+                  UI/UX design of Depok City website for competition, focused on
+                  information, accessibility, and aesthetics.
                 </p>
               </div>
             </div>
-          </div>
-    </section>
-  </main>
+          </a>
+        </div>
+      </section>
+    </main>
 
-    <div id="contact" class="p-[7vh] bg-[#1e242e] mt-auto">
+    <div id="contact" class="p-[20px] mt-[10px] bg-[#1e242e] md:p-[40px]">
       <div class="ml-[17px]">
         <p class="text-[#e0fbfc] text-[20px] font-bold">Get In Touch</p>
         <p class="text-[#e0fbfc] text-[18px]">
